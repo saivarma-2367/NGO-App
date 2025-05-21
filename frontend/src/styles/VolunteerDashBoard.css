@@ -1,0 +1,10 @@
+.GridsBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+h3{
+  margin-top:20px;
+}

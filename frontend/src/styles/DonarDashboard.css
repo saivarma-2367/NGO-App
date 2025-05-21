@@ -1,0 +1,13 @@
+.main-div{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.form-div{
+  width: 1000px;
+}
+
+.requirements-div{
+  width: 1000px;
+}
