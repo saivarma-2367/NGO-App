@@ -21,8 +21,15 @@
 
 h3 {
   margin-top: 20px;
-  padding: 10px;
   color: white;
+}
+
+.grid-item1 {
+  overflow-y: auto;
+  max-height: 300px; /* Adjust based on your layout */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 

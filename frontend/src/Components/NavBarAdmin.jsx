@@ -8,8 +8,16 @@ import Stack from '@mui/material/Stack';
 import Ic1 from '../Images/donation.png';
 import Ic2 from '../Images/volunteer.png';
 import Ic3 from '../Images/admin.png';
+import { useNavigate } from 'react-router-dom';
 
 function NavBarAdmin() {
+  const navigate=useNavigate();
+  const handleDonationNavigate =()=>{
+    navigate('/donate')
+  }
+  const handleVolunteerNavigate =()=>{
+    navigate('/volunteer')
+  }
   return (
     <div className='nav-container' >
       <div className='left-fBox'>
@@ -20,10 +28,10 @@ function NavBarAdmin() {
         <h2>Together, We Give Hope a Hand</h2>
       </div>
       <div className='Right-fBox'>
-        <Button variant="contained" endIcon={ <img src={Ic1} alt="donation"style={{ width: 20, height: 20, objectFit: 'contain', marginBottom: 10 ,marginLeft:0}} /> }>
+        <Button variant="contained" onClick={handleDonationNavigate} endIcon={ <img src={Ic1} alt="donation"style={{ width: 20, height: 20, objectFit: 'contain', marginBottom: 10 ,marginLeft:0}} /> }>
            Donate
          </Button>
-        <Button variant="contained" endIcon={ <img src={Ic2} alt="volunteer" style={{ width: 20, height: 20, objectFit: 'contain', marginBottom: 10 ,marginLeft:0}} /> }>
+        <Button variant="contained" onClick={handleVolunteerNavigate}endIcon={ <img src={Ic2} alt="volunteer" style={{ width: 20, height: 20, objectFit: 'contain', marginBottom: 10 ,marginLeft:0}} /> }>
            volunteer
          </Button>
       </div>
